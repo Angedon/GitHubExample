@@ -1,6 +1,6 @@
 #include<iostream>
 
-long min(int A[], int n)
+int min(int A[], int n)
 {
 	int minimum = 10000000;
 	for(int i = 0; i < n; ++i)
