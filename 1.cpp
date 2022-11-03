@@ -11,17 +11,6 @@ int min(int A[], int n)
 	return minimum; 
 }
 
-int max(int A[], int n)
-{
-	int maximum = -100000000;
-	for(int i = 0; i < n; ++i)
-	{
-		if(A[i] < maximum)
-			maximum = A[i];
-	}
-	return maximum; 
-}
-
 using namespace std;
 int main()
 {
