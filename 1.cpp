@@ -1,6 +1,6 @@
 #include<iostream>
 
-int min(int A[], int n)
+long min(int A[], int n)
 {
 	int minimum = 10000000;
 	for(int i = 0; i < n; ++i)
@@ -9,17 +9,6 @@ int min(int A[], int n)
 			minimum = A[i];
 	}
 	return minimum; 
-}
-
-int max(int A[], int n)
-{
-	int maximum = 10000000;
-	for(int i = 0; i < n; ++i)
-	{
-		if(A[i] > maximum)
-			maximum = A[i];
-	}
-	return maximum; 
 }
 
 using namespace std;
