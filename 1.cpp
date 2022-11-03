@@ -1,9 +1,9 @@
 #include<iostream>
 
-long min(long A[], long n)
+long min(int A[], int n)
 {
-	long minimum = 10000000;
-	for(long i = 0; i < n; ++i)
+	int minimum = 10000000;
+	for(int i = 0; i < n; ++i)
 	{
 		if(A[i] < minimum)
 			minimum = A[i];
@@ -14,7 +14,7 @@ long min(long A[], long n)
 using namespace std;
 int main()
 {
-	long A[5] = {1,4,-8,0,5};	
-	long minimum = min(A, 5);
+	int A[5] = {1,4,-8,0,5};	
+	int minimum = min(A, 5);
 	cout << minimum;
 }
