@@ -11,17 +11,6 @@ long min(long A[], long n)
 	return minimum; 
 }
 
-long max(long A[], long n)
-{
-	long maximum = 10000000;
-	for(int i = 0; i < n; ++i)
-	{
-		if(A[i] > maximum)
-			maximum = A[i];
-	}
-	return maximum; 
-}
-
 using namespace std;
 int main()
 {
