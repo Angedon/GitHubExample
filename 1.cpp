@@ -1,8 +1,8 @@
 #include<iostream>
 
-long min(long A[], long n)
+int min(int A[], int n)
 {
-	long minimum = 10000000;
+	int minimum = 10000000;
 	for(int i = 0; i < n; ++i)
 	{
 		if(A[i] < minimum)
@@ -11,10 +11,21 @@ long min(long A[], long n)
 	return minimum; 
 }
 
+int max(int A[], int n)
+{
+	int maximum = 10000000;
+	for(int i = 0; i < n; ++i)
+	{
+		if(A[i] > maximum)
+			maximum = A[i];
+	}
+	return maximum; 
+}
+
 using namespace std;
 int main()
 {
-	long A[5] = {1,4,-8,0,5};	
-	long minimum = min(A, 5);
+	int A[5] = {1,4,-8,0,5};	
+	int minimum = min(A, 5);
 	cout << minimum;
 }
